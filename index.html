@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juicy Options Screener</title>
+    <style>
+        :root {
+            --blue: #007AFF;
+            --bg: #f9fafb;
+            --card: #ffffff;
+            --text: #1d1d1f;
+            --secondary: #6e6e73;
+            --border: #e5e7eb;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        header { text-align: center; margin-bottom: 48px; }
+        .icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+        }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        .tagline { color: var(--secondary); font-size: 17px; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .card h2 { font-size: 20px; font-weight: 600; margin-bottom: 12px; }
+        .card p { color: var(--secondary); font-size: 15px; margin-bottom: 12px; }
+        .card p:last-child { margin-bottom: 0; }
+        .card a { color: var(--blue); }
+        .links {
+            display: flex;
+            gap: 12px;
+            margin-top: 32px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .links a {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: opacity 0.2s;
+        }
+        .links a:hover { opacity: 0.85; }
+        .links .primary { background: var(--blue); color: white; }
+        .links .secondary-link {
+            background: var(--card);
+            color: var(--blue);
+            border: 1px solid var(--border);
+        }
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            color: var(--secondary);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="icon" src="icon.png" alt="Juicy Options Screener app icon">
+            <h1>Juicy Options Screener</h1>
+            <p class="tagline">A weekly option premium screener for iPhone, iPad, and Mac</p>
+        </header>
+
+        <div class="card">
+            <h2>What It Does</h2>
+            <p>Every week Juicy Options Screener scans hundreds of stocks and flags the ones whose nearest-the-money option for that week&rsquo;s Friday expiration is paying worthwhile premium, with a bid/ask spread tight enough to be meaningful. The result is a short, ranked list of names worth a closer look.</p>
+            <p>It is not a stock picker, it makes no predictions, and it doesn&rsquo;t do trend analysis. Those judgments stay with you.</p>
+        </div>
+
+        <div class="card">
+            <h2>Features</h2>
+            <p>Adjustable screen (price band, bid as a percent of strike, bid/ask spread) &bull; Calls, puts, either, or both &bull; Example bear call and bull put spreads found in the option chain data, with net credit, max risk, and return on risk &bull; A return-on-risk grid of every strike combination &bull; 90-day candlestick charts with strike lines &bull; Optional next-earnings dates &bull; Built-in universes (S&amp;P 500, Nasdaq-100, Dow 30, S&amp;P 400 and 600, sector ETFs) and your own custom lists &bull; Bookmarks &bull; Sample data to try the app without an account</p>
+        </div>
+
+        <div class="card">
+            <h2>Requirements</h2>
+            <p>iPhone or iPad running iOS 26 or later, or a Mac running macOS 26 or later. Live market data needs your own Tradier API token (a free sandbox token works, with delayed data). Earnings dates optionally use a free Alpha Vantage API key.</p>
+        </div>
+
+        <div class="card">
+            <h2>Read-Only by Design</h2>
+            <p>The app only reads market data. It never places orders, reads account balances or positions, or moves money. Spreads it shows are examples found in the option chain data, not recommendations. Juicy Options Screener is an analysis tool, not investment advice.</p>
+        </div>
+
+        <div class="links">
+            <a href="support.html" class="primary">Support</a>
+            <a href="privacy.html" class="secondary-link">Privacy</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Don Babcock. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

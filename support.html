@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juicy Options Screener &mdash; Support</title>
+    <style>
+        :root {
+            --blue: #007AFF;
+            --bg: #f9fafb;
+            --card: #ffffff;
+            --text: #1d1d1f;
+            --secondary: #6e6e73;
+            --border: #e5e7eb;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .back {
+            display: inline-block;
+            color: var(--blue);
+            text-decoration: none;
+            font-size: 15px;
+            margin-bottom: 24px;
+        }
+        .back:hover { text-decoration: underline; }
+        h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+        .lede {
+            color: var(--secondary);
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .card h2 { font-size: 20px; font-weight: 600; margin-bottom: 12px; }
+        .card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 16px;
+            margin-bottom: 6px;
+        }
+        .card h3:first-of-type { margin-top: 0; }
+        .card p {
+            color: var(--secondary);
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .card p:last-child { margin-bottom: 0; }
+        .card ul {
+            color: var(--secondary);
+            font-size: 15px;
+            padding-left: 22px;
+            margin-bottom: 12px;
+        }
+        .card li { margin-bottom: 6px; }
+        .card a { color: var(--blue); }
+        .card a.button {
+            display: inline-block;
+            background: var(--blue);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            margin-top: 8px;
+        }
+        .card a.button:hover { opacity: 0.85; }
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            color: var(--secondary);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">&larr; Back to Juicy Options Screener</a>
+        <h1>Support</h1>
+        <p class="lede">Getting started, common questions, and how to get in touch.</p>
+
+        <div class="card">
+            <h2>Requirements</h2>
+            <ul>
+                <li>iPhone or iPad running iOS 26 or later, or a Mac running macOS 26 or later</li>
+                <li>A Tradier API token for live market data (a free sandbox token gives delayed data; a production token comes with a Tradier brokerage account)</li>
+                <li>Optional: a free Alpha Vantage API key for next-earnings dates</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Getting Started</h2>
+            <h3>1. Add your Tradier token</h3>
+            <p>Open <strong>Settings &rarr; Tradier</strong>, choose the Account type that matches your token (<strong>Sandbox</strong> or <strong>Production</strong>), and paste the token. It&rsquo;s stored only in your device&rsquo;s Keychain.</p>
+            <h3>2. Run a scan</h3>
+            <p>Tap <strong>Scan</strong>. Matches appear as each option chain is checked, ranked by bid as a percent of strike. Tap a candidate to see its chart, at-the-money options, and example spreads.</p>
+            <h3>3. Not ready for a token yet?</h3>
+            <p>Tap <strong>Try with Sample Data</strong> on the start screen (or in Settings &rarr; Tradier) to explore the whole app with made-up prices.</p>
+            <h3>4. Earnings dates (optional)</h3>
+            <p>Get a free key from Alpha Vantage and add it in <strong>Settings &rarr; Alpha Vantage</strong>.</p>
+        </div>
+
+        <div class="card">
+            <h2>FAQ</h2>
+
+            <h3>A scan says Tradier rejected the token (HTTP 401)</h3>
+            <p>Check that the Account setting matches the token: sandbox tokens only work with Sandbox, and production tokens only with Production. Use the eye button in Settings to check the saved token for typos.</p>
+
+            <h3>Earnings dates are blank</h3>
+            <p>Add an Alpha Vantage key in Settings. The free tier allows a limited number of requests per day, so dates can also be blank after many scans in one day.</p>
+
+            <h3>A symbol never shows up</h3>
+            <p>Share-class tickers use a slash for Tradier (for example BRK/B for BRK.B). Check the symbol&rsquo;s Tradier form in your custom universe.</p>
+
+            <h3>Why does a spread say &ldquo;No qualifying spread&rdquo;?</h3>
+            <p>No strike in that week&rsquo;s chain met your target delta and minimum credit. Both are adjustable in <strong>Settings &rarr; Credit Spreads</strong>.</p>
+
+            <h3>Does the app place trades?</h3>
+            <p>No. Juicy Options Screener only reads market data. It never places orders, reads account balances or positions, or moves money.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact &amp; Bug Reports</h2>
+            <p>The fastest way to report a bug, request a feature, or ask a question is to open a GitHub issue.</p>
+            <a href="https://github.com/ayefon/JuicyOptionsScreener/issues" class="button">Open a GitHub Issue</a>
+        </div>
+
+        <footer>
+            <p>Juicy Options Screener is an analysis tool, not investment advice.</p>
+            <p style="margin-top: 8px;">&copy; 2026 Don Babcock. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="index.html" style="color: var(--blue); text-decoration: none;">Home</a> &middot;
+                <a href="privacy.html" style="color: var(--blue); text-decoration: none;">Privacy</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
