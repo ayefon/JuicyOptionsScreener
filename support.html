@@ -125,16 +125,28 @@
             <p>Add an Alpha Vantage key in Settings. The free tier allows a limited number of requests per day, so dates can also be blank after many scans in one day.</p>
 
             <h3>A symbol never shows up</h3>
-            <p>Share-class tickers use a slash for Tradier (for example BRK/B for BRK.B). Check the symbol&rsquo;s Tradier form in your custom universe.</p>
+            <p>Share-class tickers use a slash for Tradier (for example BRK/B for BRK.B). Check the symbol&rsquo;s Tradier form in <strong>Settings &rarr; Universes &rarr; Manage Universes</strong>.</p>
+
+            <h3>A universe list is out of date</h3>
+            <p>Index members change, and each list is a snapshot; the date under its name in <strong>Settings &rarr; Universes</strong> says when. Every list, including the S&amp;P 500, Nasdaq-100 and the others that come with the app, can be edited in <strong>Manage Universes</strong>: add or remove symbols, or delete the list. If an app update brings a newer copy of a list you haven&rsquo;t edited, it&rsquo;s replaced automatically; if you have edited it, the app asks whether to replace it or keep yours. A deleted list that came with the app can&rsquo;t be restored.</p>
 
             <h3>Why does a spread say &ldquo;No qualifying spread&rdquo;?</h3>
             <p>No strike in that week&rsquo;s chain met your target delta and minimum credit. Both are adjustable in <strong>Settings &rarr; Credit Spreads</strong>. In a candidate&rsquo;s details you can also tap <strong>Choose Strikes</strong> to start from the strike nearest your target delta.</p>
 
             <h3>Can I look at other strikes than the example spread?</h3>
-            <p>Yes. In a candidate&rsquo;s details, the up and down arrows beside each leg move it one strike, and <strong>Shift Both</strong> moves both legs together. The numbers and the chart&rsquo;s strike lines follow. <strong>Reset to Example</strong> goes back. Each symbol keeps its adjusted strikes while you look at others, until the next scan. <strong>Show All Combinations</strong> lists the return on risk for every strike pair.</p>
+            <p>Yes. In a candidate&rsquo;s details, the up and down arrows beside each leg move it one strike, and <strong>Shift Both</strong> moves both legs together. The numbers and the chart&rsquo;s strike lines follow. <strong>Reset to Example</strong> goes back. Each symbol keeps its adjusted strikes for that week&rsquo;s expiration, through new scans and relaunches, until the options expire. <strong>Show All Combinations</strong> lists the return on risk for every strike pair.</p>
 
             <h3>How do I switch between different screen settings?</h3>
-            <p>Save them as a <strong>settings set</strong>. At the top of Settings, tap <strong>Save Current Settings As&hellip;</strong> to save the Screen and Credit Spreads settings and the selected universes under a name. Load a saved set from <strong>Saved Sets</strong>; each set&rsquo;s <strong>&#8943;</strong> button renames, updates, or deletes it. Sets are saved on your device only.</p>
+            <p>Save them as a <strong>settings set</strong>. At the top of Settings, tap <strong>Save Current Settings As&hellip;</strong> to save the Screen, Credit Spreads and Single Options settings and the selected universes under a name. Load a saved set from <strong>Saved Sets</strong>; each set&rsquo;s <strong>&#8943;</strong> button renames, updates, or deletes it. Sets are saved on your device only.</p>
+
+            <h3>How do I get the default settings back?</h3>
+            <p>Use the <strong>Restore Default</strong> buttons in Settings, under Screen, Credit Spreads, and Single Options. There&rsquo;s no need to delete the app. A saved settings set keeps the values it was saved with until you update it.</p>
+
+            <h3>What&rsquo;s kept if I delete the app?</h3>
+            <p>On an <strong>iPhone or iPad</strong>, deleting the app erases everything it saved on that device: your universes and your edits to them, settings sets, bookmarks, adjusted strikes, and every setting. A reinstall starts from the defaults with the preloaded universes. Your <strong>Tradier token and Alpha Vantage key are kept</strong> in the Keychain and usually come back after reinstalling; tap <strong>Remove</strong> in <strong>Settings &rarr; Tradier</strong> and <strong>Settings &rarr; Alpha Vantage</strong> first if you don&rsquo;t want that. On the <strong>Mac</strong>, deleting the app keeps everything, settings included.</p>
+
+            <h3>How do I keep a universe I&rsquo;ve edited?</h3>
+            <p>Open it in <strong>Settings &rarr; Universes &rarr; Manage Universes</strong> and use <strong>Share as JSON File</strong> (on the Mac, <strong>Export JSON File&hellip;</strong> saves it to a folder). You can import that file again later, on the same device or another.</p>
 
             <h3>What are the lines and shaded bands on the chart?</h3>
             <p>The two blue lines are the <strong>50-day</strong> and <strong>200-day moving averages</strong> of the daily close; the heavier one is the 200-day. The shaded bands are <strong>supply and demand zones</strong> found in the price history, with small circles where price has come back to a zone. Turn zones off for one symbol with the switch above the chart, or for every symbol in <strong>Settings &rarr; Charts</strong>. The <strong>Daily | Weekly</strong> switch shows weekly candles instead.</p>
